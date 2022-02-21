@@ -28,6 +28,12 @@ const header = () => {
         } else { getImages(searchInputElement, headerElement) }
     })
 
+    searchInputElement.addEventListener('keydown', (event) => {
+        if (event.keyCode === 13) {
+            getImages(searchInputElement, headerElement)
+        }
+    })
+
 
     return headerElement;
 }
