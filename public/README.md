@@ -17,3 +17,4 @@ Image Gallery App is a website for displaying images from the categories that us
 
 ## Nice-to Haves
 - [ ] Should have an image owner detail page
+- [ ] Get random image
