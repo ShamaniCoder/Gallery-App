@@ -13,7 +13,7 @@ const makeImages = (data) => {
         img.src = item.urls.regular;
         img.className = 'gallery-img';
         img.setAttribute('alt', 'image2')
-        img.addEventListener('click', () => {getDataCreateDetail(galleryElement, item)})
+        img.addEventListener('click', () => { getDataCreateDetail(galleryElement, item) })
         galleryElement.appendChild(img);
 
     })

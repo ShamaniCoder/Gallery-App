@@ -1,5 +1,6 @@
 import createElement from "../helper/createElement.js"
 import getImages from "../handler/getImages.js"
+import getRandomImages from "../handler/getRandomImages.js"
 
 const header = () => {
     const headerElement = createElement('div', 'header-section')
@@ -21,8 +22,12 @@ const header = () => {
     divElement.appendChild(searchInputElement)
     divElement.appendChild(buttonElement)
 
-    buttonElement.addEventListener('click', () => { getImages(searchInputElement, headerElement) })
-    
+    buttonElement.addEventListener('click', () => {
+        if (searchInputElement.value === '') {
+            getRandomImages(searchInputElement, headerElement)
+        } else { getImages(searchInputElement, headerElement) }
+    })
+
 
     return headerElement;
 }
