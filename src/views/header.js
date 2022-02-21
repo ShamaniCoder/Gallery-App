@@ -24,13 +24,15 @@ const header = () => {
 
     buttonElement.addEventListener('click', () => {
         if (searchInputElement.value === '') {
-            getRandomImages(searchInputElement, headerElement)
+            getRandomImages(headerElement)
         } else { getImages(searchInputElement, headerElement) }
     })
 
     searchInputElement.addEventListener('keydown', (event) => {
         if (event.keyCode === 13) {
-            getImages(searchInputElement, headerElement)
+            if (searchInputElement.value === '') {
+                getRandomImages(headerElement)
+            } else { getImages(searchInputElement, headerElement) }
         }
     })
 

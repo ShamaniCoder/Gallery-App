@@ -6,7 +6,7 @@ import { fetchData } from "./fetchData.js";
 const makeImages = (data) => {
     console.log(data);
     const galleryElement = createElement('div', 'gallery')
-    galleryElement.innerHTML = '';
+    // galleryElement.innerHTML = '';
     data.forEach((item) => {
 
         let img = createElement('img');
@@ -14,8 +14,9 @@ const makeImages = (data) => {
         img.className = 'gallery-img';
         img.setAttribute('alt', 'image2')
         img.addEventListener('click', () => {
-            galleryElement.classList.remove('gallery')
-            getDataCreateDetail(galleryElement, item)
+            // galleryElement.classList.remove('gallery')
+            getDataCreateDetail(item)
+            window.scroll(0, 0)
         })
         galleryElement.appendChild(img);
 
