@@ -5,12 +5,12 @@ import getRandomImages from "../handler/getRandomImages.js"
 const header = () => {
     const headerElement = createElement('div', 'header-section')
     const divElement = createElement('div', 'header-content')
-    const logoElement = createElement('h1', 'logo')
+    const logoElement = createElement('img', 'logo')
     const paragraphElement = createElement('p', 'sub-line')
     const searchInputElement = createElement('input', 'search-box')
     const buttonElement = createElement('button', 'search-btn')
 
-    logoElement.textContent = "logo"
+    logoElement.src = "./public/images/hfylogo.png"
     paragraphElement.textContent = 'the best royalty free images you can find here.';
     buttonElement.textContent = 'Search';
 

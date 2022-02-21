@@ -27,10 +27,8 @@ body {
 }
 
 .logo {
-  font-size: 80px;
-  font-weight: 400;
-  color: #fff;
-  text-transform: capitalize;
+  width: 20%;
+  margin-left: -35px;
 }
 
 .sub-line {
@@ -107,9 +105,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
   background: #f9f9f9;
+  -webkit-box-shadow: 1px 0px 12px -1px rgba(0, 0, 0, 0.87);
+  box-shadow: 1px 0px 12px -1px rgba(0, 0, 0, 0.87);
 }
 .user-image {
   width: 30%;
+  border-radius: 50%;
 }
 
 .popup-container {
