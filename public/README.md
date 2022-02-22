@@ -2,7 +2,7 @@
 ## 1. Demo
 Project link is available at [Image Gallery APP](https://github.com/)   
 
-![Image Gallery App!](/public/images/App-Demo.png)   
+![Image Gallery App!](/public/images/App-Animation.gif)   
 
 ## 2. Description
 Image Gallery App is a website for displaying images randomly or from the categories that user chooses . User will write category on the search bar, when submitted/press enter, there are 30 images will be displayed. If the user clicks on any image, a new window will popup and user can see the image owner's detailed information.
