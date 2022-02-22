@@ -11,7 +11,7 @@ const header = () => {
     const buttonElement = createElement('button', 'search-btn')
 
     logoElement.src = "./public/images/hfylogo.png"
-    paragraphElement.textContent = 'the best royalty free images you can find here.';
+    paragraphElement.textContent = 'the best free images you can find here.';
     buttonElement.textContent = 'Search';
 
     searchInputElement.setAttribute('placeholder', 'Search Image')

@@ -4,7 +4,6 @@ import { API_KEY } from '../../constant.js'
 
 
 const getDataCreateDetail = async (item) => {
-    // galleryElement.innerHTML = '';
     const user_url = `https://api.unsplash.com/users/${item.user.username}?client_id=${API_KEY}`;
     const imageDetail = await fetchData(user_url)
     const popupContainer = createElement('div', 'popup-container');
