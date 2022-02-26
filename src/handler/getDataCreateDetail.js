@@ -5,7 +5,9 @@ import { API_KEY } from '../../constant.js'
 
 const getDataCreateDetail = async (item) => {
     const user_url = `https://api.unsplash.com/users/${item.user.username}?client_id=${API_KEY}`;
+
     const imageDetail = await fetchData(user_url)
+
     const popupContainer = createElement('div', 'popup-container');
     const userImage = createElement('img', 'user-image')
     const infoContainer = createElement('div', 'info-container');
@@ -15,6 +17,7 @@ const getDataCreateDetail = async (item) => {
     const userTotalLikes = createElement('p', 'user-total-likes')
     const userTotalPhotos = createElement('p', 'user-total-photos')
     const closeElement = createElement('i', 'fa-solid fa-2x fa-xmark')
+
     document.body.appendChild(popupContainer)
     popupContainer.appendChild(userImage)
     popupContainer.appendChild(infoContainer)
@@ -24,7 +27,8 @@ const getDataCreateDetail = async (item) => {
     infoContainer.appendChild(userBio)
     infoContainer.appendChild(userTotalLikes)
     infoContainer.appendChild(userTotalPhotos)
-    userImage.src = imageDetail.profile_image.large
+
+    userImage.src = imageDetail.profile_image.medium
     userName.textContent = `User Name : ${imageDetail.name}`
     userInstagram.textContent = `Instagram : ${imageDetail.instagram_username}`
 

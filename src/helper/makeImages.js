@@ -10,7 +10,7 @@ const makeImages = (data) => {
         let img = createElement('img');
         img.src = item.urls.regular;
         img.className = 'gallery-img';
-        img.setAttribute('alt', 'image2')
+        img.setAttribute('alt', item.description)
         img.addEventListener('click', () => {
             getDataCreateDetail(item)
             window.scroll(0, 0)

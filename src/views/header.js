@@ -16,11 +16,11 @@ const header = () => {
 
     searchInputElement.setAttribute('placeholder', 'Search Image')
 
-    headerElement.appendChild(divElement)
     divElement.appendChild(logoElement)
     divElement.appendChild(paragraphElement)
     divElement.appendChild(searchInputElement)
     divElement.appendChild(buttonElement)
+    headerElement.appendChild(divElement)
 
     buttonElement.addEventListener('click', () => {
         if (searchInputElement.value === '') {
